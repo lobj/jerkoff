@@ -117,7 +117,7 @@ def main():
                 bullets = bullet1
                 bullets[bullet_index].reset(our_plane.rect.midtop)
                 bullet_index = (bullet_index + 1) % bullet_num
-
+            # 循环处理每个子弹移动,碰撞
             for b in bullets:
                 if b.active:  # 只有激活的子弹才可能击中敌机
                     b.move()

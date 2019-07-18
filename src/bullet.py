@@ -28,6 +28,7 @@ class Bullet(pygame.sprite.Sprite):
             self.active = False
         else:
             self.rect.top -= self.speed
+            # self.rect.left -= self.speed # 测试修改子弹轨迹
 
     def reset(self, position):
         """
